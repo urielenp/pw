@@ -1,0 +1,59 @@
+h1 {
+    color: red;
+    text-align: center;
+    font-family: monospace;
+    margin: 34px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+#Clase{
+    
+    text-align: center;
+    font-size: 18px;
+}
+
+.Superior {
+    color: blue;
+    font-size: 25px;
+    margin: 15px;
+}
+
+div p {
+    font-size: 28px;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    border: 10px;
+}
+
+.Integrante{
+    font-style: italic;
+    color: rgb(46, 46, 46);
+}
+
+#IndiceEncabezado{
+    margin-top: 32px;
+}
+
+#indice{
+    padding: 25px;
+}
+
+li{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div a{
+    color: crimson;
+    font-size: 26px;
+    text-decoration: none;
+}
