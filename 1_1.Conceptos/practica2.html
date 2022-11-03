@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="back">
+        <h1>2.1 Resumen de HTML</h1>
+
+        <nav id="navig">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../2_1.HTML/pagina.html">Leccion Previa</a></li>
+                <li><a href="../3_1.CSS/pagina3.html">Siguiente Leccion</a></li>
+            </ul>
+        </nav>
+
+        <div class="Conceptos">
+            <h2>DEFINICIÓN DE HTML5</h2>
+            <p>HTML5 es una combinación de nuevas etiquetas de markup (lenguaje) HTML, propiedades CSS3, JavaScript y algunas tecnologías complementarias de apoyo, pero que técnicamente son independientes de la propia especificación HTML5. Por ello vamos a distinguir entre la especificación HTML5 en sí y la familia HTML5.<br>
+            Podemos definir la especificación HTML5 como nuevos elementos de markup o sintaxis, utilizados por los diseñadores para crear páginas web junto con las etiquetas utilizadas a día de hoy. Muchos de estos nuevos elementos ya son conocidos para los diseñadores que trabajan con las etiquetas HTML tradicionales, como p, ul o div. Estas nuevas etiquetas suponen para desarrolladores y diseñadores, unas herramientas más avanzadas y se traducen en mejores experiencias para el usuario final.<br>
+            La familia HTML5 incluye las nuevas etiquetas y tecnologías como CSS3, Geolocalización, Almacenamiento Web (Web Storage), Web Workers y Web Sockets entre otras. Todas ellas suponen una actualización de gran potencia al conjunto de herramientas ya existente, y con ellas se pueden crear páginas web más sofisticadas y útiles.
+            </p>
+
+            <h2>Historia</h2>
+            <p>
+                En 2004, un grupo de representantes de los principales fabricantes de navegadores y un grupo de trabajo de desarrolladores web formaron un grupo independiente llamado WHATWG (iniciales de Web Hypertext Application Technology Working Group). Su misión consistía en crear una especificación de lenguaje HTML mejor, orientada a crear un nuevo tipo de aplicaciones web pero manteniendo la compatibilidad con las versiones en activo de los navegadores existentes.<br>
+                Durante unos dos años y medio el W3C y el grupo WHATWG trabajaron en paralelo y de manera independiente hasta que en 2006, Tim Berners-Lee, creador de la World Wide Web y fundador del W3C anunció que el W3C y WHATWG trabajarían juntos en la elaboración del estándar.<br>
+                Como resultado de todo ello, se abandonó el desarrollo de XHTML 2.0 y la especificación HTML 4.0 se reformó con el nombre HTML5. No obstante, conviene recordar que HTML5 empezó siendo Web Applications 1.0, y eso nos da una pista muy clara para entender para qué fue diseñado realmente HTML5.<br>
+                Gracias a que el W3C tomó el liderazgo para el desarrollo de HTML5, ahora los desarrolladores tenemos la garantía de que HTML5 será realmente un estándar gratuito y con las suficientes garantías de no incurrir en problemas de propiedad intelectual.
+            </p>
+        
+            <h2>LOS ELEMENTOS VIDEO, AUDIO Y CANVAS</h2>
+            <p>
+                La especificación HTML5 incluye etiquetas que nos permiten integrar contenidos multimedia sin necesidad de complementos de navegador. Las etiquetas video y audio sirven para integrar video y audio en las páginas web de la misma forma que actualmente se hace con los archivos de imagen utilizando la etiqueta img. La etiqueta canvas dota al lenguaje HTML de un formato nativo para el dibujo y la animación. Esta etiqueta puede servir, además, como plataforma alternativa para los gráficos y animaciones que a día de hoy podemos ver en películas Flash. No obstante, existen inconvenientes de cierta consideración que es preciso resolver.
+            </p>
+
+            <h2>ELEMENTOS VIDEO Y AUDIO PARA INCORPORAR CONTENIDOS MULTIMEDIA</h2>
+            <p>
+                La estructura necesaria para incorporar contenidos de audio o vídeo a una página web es bastante sencilla, como podemos ver en el siguiente ejemplo donde añadimos un archivo de vídeo:<br>
+                    <img src="captura1.png" alt="" ><br>
+                Insertar un archivo de audio mp3 en la página se hace de forma similar. En el caso del audio y el vídeo podemos añadirle también controles de reproducción y la posibilidad de precarga, utilizando los atributos controls, preload, y autobuffer:<br>
+                    <img src="captura2.png" alt="" class="imagen"><br>
+                Esta característica de HTML5 es muy útil si se compara con los métodos disponibles hasta ahora. Por ejemplo, para incorporar vídeo con Adobe Flash o Microsoft Silverlight es preciso añadir código de programación. Aparte, existe una amplia categoría de dispositivos móviles como los iPhone® de Apple® o Windows® Phone 7 que no soportan Flash o Silverlight, y en estos casos el elemento video de HTML5 es la principal alternativa. Aunque es de agradecer la simplificación que suponen las etiquetas video y audio, en seguida surge la pregunta de cómo vamos a hacer para manejar estos contenidos desde los navegadores anteriores que no reconocen estas etiquetas nuevas.
+            </p>
+
+            <h2>EL ELEMENTO CANVAS PARA DIBUJO Y ANIMACIÓN</h2>
+            <p>
+                El elemento canvas funciona a modo de superficie de dibujo dentro de una página web (de ahí le viene el nombre). Dentro de esta superficie de dibujo podemos crear formas con colores, gradientes y patrones de relleno. Podemos manipular los pixels de forma interactiva en pantalla, mostrar textos y exportar los contenidos hacia archivos de imagen estática, como .PNG. Podemos también utilizar JavaScript o las nuevas funciones de animación de CSS3 para que los objetos que creamos puedan moverse, desaparecer, cambiar de tamaño, etc. Incorporar un elemento canvas a una página es muy sencillo:<br>
+                <img src="captura3.png" alt="" class="imagen"><br>
+                JavaScript se encarga de todo el trabajo y nos ofrece un contexto para el objeto creado. Por ejemplo, para crear uno de los objetos más sencillos dentro del canvas, un rectángulo negro, el código necesario puede ser como este:<br>
+                <img src="captura4.png" alt="" class="imagen"><br>
+
+            </p>
+
+            <h2>FORMULARIOS WEB</h2>
+            <p>
+                Los nuevos elementos de formulario de HTML, cuando se implementen, harán que el trabajo con formularios sea más sencillo que ahora. Por ejemplo, muchos diseñadores web necesitan crear formularios en donde los datos tienen que comprobarse antes de enviarlos al servidor. Es casi obligado que el usuario, por ejemplo, tenga que escribir una dirección de correo electrónico en un campo de un formulario. A día de hoy, para validar este dato se necesita programación en  Javascript o cualquier otro lenguaje de scripting, pero HTML5 incorpora el atributo required a la lista de tipos de datos de entrada utilizables en formularios, como se muestra en este ejemplo:<br>
+                <img src="captura5.png" alt="" class="imagen"><br>
+            </p>
+
+            <h2>MUCHOS ELEMENTOS NUEVOS EN HTML5</h2>
+            <p>
+                Aparte de los nuevos elementos video, audio, canvas, y tipos de datos de formulario, hay otros nuevos elementos dentro de HTML5 que podemos utilizar, como figure y figurecaption, que se emplean para etiquetar imágenes dentro de la página web, el elemento hgroup para agrupar una serie de elementos de cabecera dentro de una sección lógica, etc. HTML5 además resuelve el caso de ciertas etiquetas que aparecen en HTML 4.01 pero que han quedado obsoletas o necesitaban ciertas precisiones, como ocurre con i, b, small, strong y abbr, que ahora tienen significados y usos nuevos con HTML5.
+            </p>
+
+            <h2>¿Qué es una API?</h2>
+            <p>
+                Las APIs (Application Programming Interfaces o, en español, Interfaces de Programación de Aplicaciones o simplemente "interfaces de programación") son una forma de crear aplicaciones utilizando componentes preconfigurados cuyo uso no se restringe a la web, ni siquiera a los lenguajes de scripting. Sitios web como Twitter o YouTube entre otros, ofrecen APIs al público de manera que los diseñadores y desarrolladores pueden con ellas integrar algunas de sus funcionalidades dentro de sus propios sitios web (y también sirven para otros fines, como por ejemplo para crear aplicaciones para teléfonos móviles o aplicaciones personalizadas para equipos de escritorio). Uno de los objetivos principales de una API es el de normalizar el modo de trabajo de ciertos mecanismos y simplificar tareas de programación, que de lo contrario, serían bastante complejas. Las APIs son un aspecto muy importante dentro del entorno de HTML5 y hay una serie de ellas que conviene conocer, como Web Storage, Microdata o Geolocation, entre otras.
+            </p>
+
+            <h2>La API de Geolocalizacion en acción </h2>
+            <p>
+                Geolocation es una API que nos permite conocer el punto geográfico desde el cual se conecta el navegador a Internet. Esta información se emplea para enviar al usuario datos de interés para él, ajustados a su ubicación. Como ejemplo de su utilidad están las páginas web de búsqueda asociadas a un mapa en el cual nos indican dónde están situados ciertos comercios o restaurantes a una distancia concreta a pie desde el punto donde estamos en ese momento. En vez de tener que introducir a mano la dirección, un navegador habilitado para geolocalización nos puede devolver estos resultados de manera automática y transparente.<br>
+                <img src="captura6.png" alt="" class="imagen"><br>
+            </p>
+
+            <h2>WEB WORKERS </h2>
+            <p>
+                Web Workers es otra API que se suele considerar de la familia HTML5. Web Workers es un marco de programación que resuelve problemas de rendimiento de los navegadores. Al acceder a aplicaciones web avanzadas, como las de mapas o aquellas que generan gráficos o diagramas al entrar en la página web, se inician ciertas operaciones de computación que consumen una gran cantidad de recursos de procesador y que pueden reducir notablemente el rendimiento de la aplicación. Gran parte de la ralentización es debida a que se produce un conflicto a nivel de máquina entre las tareas interactivas de usuario (pulsación del ratón, arrastre, etc.) y la necesidad de la propia aplicación de acceder a recursos como datos, tarjeta gráfica u otros.<br>
+                Los Web Workers son scripts que se ejecutan en threads independientes. Esto quiere decir que ciertos procesos como puede ser obtener datos desde una base de datos, se ejecutan de forma independiente de las actividades que desarrolle el usuario, lo que da como resultado un entorno mucho más fluido para éste.
+
+            </p>
+
+            <h2>ALMACENAMIENTO WEB</h2>
+            <p>
+                El Almacenamiento Web (Web Storage) es un ejemplo de uso de modelos preexistentes de tecnologías web bajo nuevas modalidades, más potentes. El Web Storage mejora el concepto de cookies del navegador. Actualmente las cookies permiten que los sitios web puedan guardar información en cantidades muy reducidas en los equipos de los usuarios, datos que normalmente sirven para volver a utilizarlos en momentos posteriores, y de esta manera, por ejemplo, ciertos sitios web recuerdan la información del usuario desde el último acceso.<br>
+                Las cookies son una tecnología bastante limitada y no resulta fácil su utilización por parte de los diseñadores web. Ahora, Web Storage actualiza este modelo para que las aplicaciones web puedan almacenar una cantidad de datos muy superior y que su acceso y utilización sea mucho más fácil y eficiente.<br>
+                HTML5 nos ofrece dos maneras de guardar datos: localStorage y sessionStorage. Los datos guardados con localStorage quedan a disposición del navegador en todo momento, aunque cerremos el programa o se reinicie el sistema. Los datos guardados bajo la modalidad  sessionStorage se pierden al cerrar el navegador.
+
+
+            </p>
+
+            <h2>HTML5 ESTÁ EN UN MOMENTO DE TRANSICIÓN</h2>
+            <p>
+                Las tecnologías que hay detrás de HTML5 están en fase de transición, por lo que es necesario tener claro cuándo debemos utilizarlas y cuándo no. A lo largo de este libro te iremos orientando y ofreciendo una perspectiva lo más amplia posible al respecto del tipo de compatibilidad que puedes esperar en distintos navegadores y también ofreceremos ejemplos de uso donde el uso de HTML5 puede ser más indicado que otros lenguajes.<br>
+                Todos los navegadores de mayor difusión hoy en día (Microsoft Internet Explorer, Mozilla Firefox, Apple Safari, Google Chrome y Opera) ofrecen soporte, en grado variable, para las funcionalidades de HTML5 en cuanto a su sintaxis y tecnologías relacionadas. En algunos casos una página que ofrece alguna funcionalidad nueva o un aspecto especial en un navegador puede que no se consiga ver en absoluto en otro, o que algunas características no estén presentes aunque la página siga siendo funcional. 
+
+
+            </p>
+
+            <h2>¿QUIÉN UTILIZA HTML5 A DÍA DE HOY?</h2>
+            <p>
+                Es una pregunta difícil de responder porque, como has podido ver, no existe una definición única para "HTML5". Existen numerosas demos de HTML5 que no se podrían poner en entornos en producción debido al distinto grado de soporte que ofrecen los navegadores. Si decides incorporar funciones de estilo de CSS3, hay muchos sitios web personales y de empresas que utilizan los elementos más vistosos, como border-radius o las funciones de transformación. En estos casos, los diseñadores pueden utilizar las funcionalidades y añadir alternativas adicionales para asegurarse de que la restitución de estas páginas en navegadores no compatibles no es demasiado diferente de cómo se ven en los navegadores más modernos.<br>
+                Todos los navegadores web de mayor difusión apuestan por HTML5 en sus últimas versiones y si aprendes hoy sus secretos, podrás formar parte activa de una nueva era que ahora comienza para la Web, llena de interés y asombrosas novedades.
+            </p>
+
+            <h2>IDENTIFICACIÓN DE SITIOS WEB BASADOS EN HTML5</h2>
+            <p>
+                En enero de 2010 el W3C presentó el logo de HTML5 para uso público, con el cual quieren promocionar las nuevas capacidades de HTML5 y sus tecnologías asociadas.<br>
+                <img src="captura7.png" alt="" class="imagen"><br>
+                El logo de HTML5 se puede descargar y utilizar libremente y de forma gratuita.
+            </p>
+
+            <h2>
+                Conclusiones
+            </h2>
+
+            <h3>1869402 &nbsp; Reduan Missael Guel Gómez &nbsp; IAS</h3>
+            <p>Para concluir con la investigación, se puede decir que HTML es el lenguaje internacional para las páginas web.<br>
+            Una de las ventajas que tenemos con este lenguaje es que puede ser creado y editado con cualquier editor básico de texto, como el block de notas en Windows y otros en sus respectivos sistemas operativos. <br>
+            Sin este lenguaje probablemente no existiría el internet que hoy en día conocemos y nos hubiéramos quedado muy atrás con el FTP.<br>
+            Este lenguaje abrió demasiadas puertas permitiéndonos crear cualquier tipo de página y poder mostrarla a cualquier persona con acceso a internet en el mundo.<br>
+            Por ultimo pero no menos importante, este lenguaje también abrió un mundo para la economía ya que las páginas web son una gran importancia hoy en dia para las ventas y compras, dicho como Amazon una de las empresas más grandes en ventas en internet.
+            </p>
+            
+            <h3>1986692 &nbsp; Manuel de Jesús Casas Carranza &nbsp; IAS</h3>
+            <p>Definiéndolo de forma sencilla, "HTML5 es el lenguaje que se utiliza para crear las páginas web a las que se accede mediante internet". Más concretamente, HTML es el lenguaje con el que se "escriben" la mayoría de páginas web. HTML también sirve para rediseñar el código para resolver problemas y actualizándolo así a nuevas necesidades, en conclusión, HTML5 tiene una gran variedad de funciones que nos pueden servir para el día día.
+            </p>
+
+            <h3>1933323	 &nbsp; Carlos Uriel Rodriguez Hidalgo	 &nbsp; IAS</h3>
+            <p>Puedo concluir que el lenguaje HTML es muy importante a la hora de trabajar con la elaboración de un sitio web, esta investigación nos ayudo como equipo a saber esto mismo y a también que mas haya del html se le pueden implementar otras cosas a este mismo como lo es el CSS o una API para así tener una pagina mas atractiv visualmente para el usuario 
+            </p>
+
+            <h3>2001274	 &nbsp; Luis Fernando Montes de Oca Delgado	 &nbsp; ITS</h3>
+            <p>
+                HTML es una herramienta indispensable a la hora de realizar una pagina web. Esta se ha mantenido en su posición actual gracias a que se lleva actualizando desde su realización inicial hace casi 30 años. <br>
+                Si no tuviésemos HTML como estándar, el internet de hoy en día no seria como lo conocemos, hasta el punto de que tal vez no podríamos acceder a una pagina tan solo por usar un navegador no soportado. Esto, y muchas de las implementaciones que tiene, hacen a este lenguaje como uno de los mas influyentes hasta nuestros días.
+            </p>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

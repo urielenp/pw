@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <div id="back">
+            <h1>6. Uso del elemento Canvas</h1>
+        
+            <nav id="navig">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a>Leccion Previa</a></li>
+                    <li><a>Siguiente Leccion</a></li>
+                </ul>
+            </nav>
+
+
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </body>
+    <script>
+        var ctx= document.getElementById("myChart").getContext("2d");
+        var myChart= new Chart(ctx,{
+            type:"bar",
+            data:{
+                labels:['LABPW','POO','CISCO','INGECO'],
+                datasets:[{
+                        label:'Alumnos por grupo',
+                        data:[28,51,44,65],
+                        backgroundColor:[
+                            'rgb(80, 134, 244,0.5)',
+                            'rgb(100, 200, 244,0.5)',
+                            'rgb(229, 89, 50,0.5)',
+                            'rgb(0, 204, 0, 0.5)'
+                        ]
+                }]
+            },
+            options:{
+                scales:{
+                    yAxes:[{
+                            ticks:{
+                                beginAtZero:true
+                            }
+                    }]
+                }
+            }
+        });
+    </script>
+    <div class="Conceptos">
+        <h2>Conclusiones</h2>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Matricula</td>
+                <td>Carrera</td>
+            </tr>
+            <tr>
+                <td>Carlos Uriel Rodriguez Hidalgo</td>
+                <td>1933323</td>
+                <td>IAS</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Como conclusion puedo decir que la etiqueta canva nos ayuda bastante para lo que son figuras o dibujos y también bucles en HTML em eñ caso de esta practica se trabajo con una gráfica porque es bastante sencilla de trabajar con la etiqueta de canva mas aparte que se nos dio la oportunidad de trabajar con ella por la lección del curso de HTML5 en MSDN.
+                </td>
+            </tr>
+            <tr>
+                <td>Luis Fernando Montes de Oca Delgado</td>
+                <td>2001274</td>
+                <td>ITS</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Para transmitir información de forma más precisa, es normal transmitirlo con ayuda del texto. Sin embargo, en una página web, se busca atrapar tu atención de forma rápida, y ver una cantidad grande de texto puede alejar a los posibles visitantes de la página. Es así, que la opción de representar la información con recursos visuales, como dibujos y gráficos, es una buena opción. Sin embargo, no es suficiente, ya que un dibujo puede pecar de estático, y no capturar totalmente la atención por su naturaleza inerte, siendo los canvas una buena implementación a la hora de tener gráficos, que a su vez puedan interactuar a las interacciones del usuario, ya sea que repose su puntero sobre él, o que se desplazarse en la misma página. 
+                </td>
+            </tr>
+            <tr>
+                <td>Manuel de Jesús Casas Carrana</td>
+                <td>1986692</td>
+                <td>ITS</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    En conclusión en la programación Web php, html son lenguajes que permite codificar o preparar documentos de hipertexto, que viene a ser los lenguajes más comunes para la construcción de las páginas Web.Con el comienzo de Internet y la programación web, se desfasaron los diseños gráficos tradicionales, con lo que se empezaron a diseñar interfaces concretas para este medio, se ha optado más por el diseño sencillo y de fácil comprensión.
+
+                </td>
+            </tr>
+            <tr>
+                <td>Reduan Missael Guel Gómez </td>
+                <td>1869402</td>
+                <td>IAS</td>
+            </tr>
+            <tr>
+                <td colspan="3">Para concluir con esta practica se pudo aprender lo importante que puede ser la etiqueta canva en la creacion de una pagina , ya que esta es util para poder implementar graficos a traves de secuencias de comandos.
+                    La forma en la que se facilita para dibujar graficos y tambien el hecho de poder realizar animacion para la implementacion en la pagina web.
+                </td>
+            </tr>
+        </table>
+    </div>
+</html>
