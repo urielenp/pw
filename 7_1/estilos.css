@@ -1,0 +1,87 @@
+h1 {
+    color: rgb(27, 24, 24);
+    padding: 12px;
+}
+
+#back{
+    background-color: rgb(141, 141, 141);
+    margin: 15px;
+    border: 2px solid black;
+}
+
+#navig {
+    background-color: rgb(244, 186, 40);
+    padding: 5px 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#navig li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding: 5px 25px;
+    font-family:'Courier New';
+    font-size: 22px;
+    display: inline-block;
+    
+}
+
+p{
+    margin-top: 8px;
+}
+
+.Conceptos{
+    font-size: 20px;
+    padding: 14px;
+    text-align: justify;
+}
+
+    
+.response{
+    color: blue;
+    font-style: italic;
+}
+
+
+table {
+    width: 100%;
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.zani {
+    width: 70%;
+}
+
+.code {
+    display: block;
+    margin: 20px 0;
+    color: greenyellow;
+    text-align: center;
+}
+
+.miel {
+    display: block;
+    margin: 20px 0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+img {
+    width: 80%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
